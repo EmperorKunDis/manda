@@ -1,0 +1,1622 @@
+{
+  "title": "Giant SyncDrive Sport / Yamaha PW-PW-SE — studijní rekonstrukce",
+  "basis": "Ověřené katalogové vztahy a parametry jsou odlišeny od rekonstruované geometrie.",
+  "sources": [
+    "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+    "https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/",
+    "https://www.youtube.com/watch?v=Me-H_Gykobc"
+  ],
+  "kit_ply00700_note": "Veřejný popis uvádí kliková ložiska a O-kroužky. Členství PLY00425 není potvrzeno.",
+  "parts": [
+    {
+      "id": "housing_gear_side",
+      "name": "Kryt na straně převodů",
+      "category": "Skříň",
+      "description": "Odlitá polovina chrání převody a vytváří uložení hřídelí; tvar a žebra jsou studijní rekonstrukcí.",
+      "verification": "rekonstrukce",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        0,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -56
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "housing_motor_side",
+      "name": "Kryt na straně motoru",
+      "category": "Skříň",
+      "description": "Druhá polovina odlitku se třemi montážními uchy; asymetrický obrys vychází z fotografií.",
+      "verification": "rekonstrukce",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        0,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        82
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "liquid_gasket",
+      "name": "Tekuté těsnění · značka spáry",
+      "category": "Skříň",
+      "description": "Pomocné znázornění těsnicího spoje. Není samostatným vyjímatelným dílem.",
+      "verification": "ověřený typ spoje; značka není samostatný díl",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        0,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        0
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "crank_spindle",
+      "name": "Kliková hřídel",
+      "category": "Hřídele",
+      "description": "Průchozí osa šlapání; délka a profil jsou vizuální rekonstrukcí.",
+      "verification": "rekonstrukce",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        -18,
+        0,
+        -11
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "output_sprocket",
+      "name": "Výstupní pouzdro velkého kola",
+      "category": "Hřídele",
+      "description": "Schematické výstupní pouzdro; vnější převodník a jeho unašeč jsou před zahájením průvodce sejmuté.",
+      "verification": "rekonstrukce",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        -26,
+        0,
+        27
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "gear_101",
+      "name": "Velké ocelové kolo · 101 zubů",
+      "category": "Převody",
+      "description": "Čtvrtý převod na klikové ose. Počet zubů, průměr 105 mm a šířka 12 mm jsou uvedeny v rozboru.",
+      "verification": "ověřený počet zubů a obálkové rozměry; profil rekonstruován",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        -30,
+        -5,
+        -12
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "gear_16",
+      "name": "Ocelové mezikolo · 16 zubů",
+      "category": "Převody",
+      "description": "Třetí převod na společné mezihřídeli s nylonovým kolem; rozbor uvádí 19 mm × 12 mm.",
+      "verification": "ověřený počet zubů a obálkové rozměry; profil rekonstruován",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        28,
+        24,
+        0
+      ],
+      "explode_blender_mm": [
+        20,
+        22,
+        -10
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "gear_56",
+      "name": "Nylonové kolo · 56 zubů",
+      "category": "Převody",
+      "description": "Druhý převod na mezihřídeli; rozbor uvádí 61 mm × 22 mm.",
+      "verification": "ověřený počet zubů a obálkové rozměry; profil rekonstruován",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        28,
+        24,
+        0
+      ],
+      "explode_blender_mm": [
+        30,
+        35,
+        26
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "intermediate_shaft",
+      "name": "Mezihřídel",
+      "category": "Hřídele",
+      "description": "Nese nylonové kolo a ocelový 16zubý pastorek; umístění odvozeno z rozboru.",
+      "verification": "rekonstrukce",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        28,
+        24,
+        0
+      ],
+      "explode_blender_mm": [
+        24,
+        34,
+        12
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "gear_8",
+      "name": "Ocelový pastorek motoru · 8 zubů",
+      "category": "Převody",
+      "description": "První převod na motorové ose; rozbor uvádí 10,8 mm × 22 mm.",
+      "verification": "ověřený počet zubů a obálkové rozměry; profil rekonstruován",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        48,
+        -6,
+        0
+      ],
+      "explode_blender_mm": [
+        42,
+        -27,
+        29
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "motor_stator",
+      "name": "Stator elektromotoru",
+      "category": "Motor",
+      "description": "Pevná část motoru s feromagnetickým jádrem a měděným vinutím; počet cívek je ilustrativní.",
+      "verification": "rekonstrukce",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        48,
+        -6,
+        0
+      ],
+      "explode_blender_mm": [
+        58,
+        -34,
+        59
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "motor_rotor",
+      "name": "Rotor a motorová hřídel",
+      "category": "Motor",
+      "description": "Rotující část a magnetický plášť pohánějí 8zubý pastorek; vnitřní konstrukce je rekonstruovaná.",
+      "verification": "rekonstrukce",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        48,
+        -6,
+        0
+      ],
+      "explode_blender_mm": [
+        47,
+        -31,
+        40
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "oneway_pedal",
+      "name": "Volnoběžka šlapání",
+      "category": "Volnoběžky",
+      "description": "Jedna ze dvou volnoběžek umožňuje šlapat bez otáčení motoru; konkrétní klec je rekonstruovaná.",
+      "verification": "ověřená funkce dvojice; geometrie rekonstruována",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        -20,
+        -20,
+        26
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "PLY00421",
+      "name": "Levé klikové ložisko PLY00421",
+      "category": "Ložiska",
+      "description": "Klikové ložisko z katalogu PW/PW-SE. Vnější drážka a O-kroužek jsou znázorněny schematicky; rozměry nejsou výrobní specifikace.",
+      "verification": "ověřené označení dílu",
+      "source": "https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/",
+      "kit": true,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        -15.75,
+        0,
+        -40
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "PLY00420",
+      "name": "Pravé klikové ložisko PLY00420",
+      "category": "Ložiska",
+      "description": "Klikové ložisko z katalogu PW/PW-SE. Vnější drážka a O-kroužek jsou znázorněny schematicky; rozměry nejsou výrobní specifikace.",
+      "verification": "ověřené označení dílu",
+      "source": "https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/",
+      "kit": true,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        -15.75,
+        0,
+        48
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "PLY00426",
+      "name": "Levý O-kroužek klikového ložiska PLY00426",
+      "category": "Těsnění",
+      "description": "O-kroužek u příslušného klikového ložiska; profil a osazení jsou rekonstruované.",
+      "verification": "ověřené označení dílu",
+      "source": "https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/",
+      "kit": true,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        -19,
+        0,
+        -49
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "PLY00427",
+      "name": "Pravý O-kroužek klikového ložiska PLY00427",
+      "category": "Těsnění",
+      "description": "O-kroužek u příslušného klikového ložiska; profil a osazení jsou rekonstruované.",
+      "verification": "ověřené označení dílu",
+      "source": "https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/",
+      "kit": true,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        -19,
+        0,
+        52
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "PLY00425",
+      "name": "Těsnění klikové osy PLY00425",
+      "category": "Těsnění",
+      "description": "Samostatně katalogizované těsnění klikové osy. Přesné členství v sadě PLY00700 ze zveřejněného popisu nepotvrzeno.",
+      "verification": "ověřený katalogový díl; členství v sadě neověřeno",
+      "source": "https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/",
+      "kit": false,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        -16,
+        0,
+        -57
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "torque_sensor",
+      "name": "Snímač krouticího momentu",
+      "category": "Elektronika",
+      "description": "Sleduje sílu jezdce na klikové ose; vnější umístění a konstrukce jsou studijní.",
+      "verification": "ověřená přítomnost; geometrie rekonstruována",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        -32,
+        -15,
+        -28
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "control_pcb",
+      "name": "Řídicí deska elektroniky",
+      "category": "Elektronika",
+      "description": "Deska řídí napájení motoru a snímá vstupy. PW-SE existuje ve více elektricky nekompatibilních revizích; osazení je ilustrativní.",
+      "verification": "ověřená funkce a více revizí; osazení rekonstruováno",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        18,
+        -45,
+        0
+      ],
+      "explode_blender_mm": [
+        35,
+        -54,
+        23
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "pressure_vent",
+      "name": "Odvětrávací membrána",
+      "category": "Těsnění",
+      "description": "Membrána pro vyrovnání tlaku a omezení kondenzace; přesný výrobek a poloha nejsou doloženy.",
+      "verification": "ověřená přítomnost; poloha rekonstruována",
+      "source": "https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se",
+      "kit": false,
+      "base_blender_mm": [
+        5,
+        -15,
+        0
+      ],
+      "explode_blender_mm": [
+        42,
+        26,
+        71
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "case_bolt_01",
+      "name": "Šroub víka 1",
+      "category": "Spojovací díly",
+      "description": "Referenční PW má šest šroubů víka. Zdejší polohy a délky jsou rekonstruované; počet na konkrétním SyncDrive není potvrzen.",
+      "verification": "počet doložen na PW; osazení rekonstruováno",
+      "source": "https://www.youtube.com/watch?v=Me-H_Gykobc&t=49s",
+      "kit": false,
+      "base_blender_mm": [
+        -89.63866095902213,
+        -23.173674073870984,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -60
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "case_bolt_02",
+      "name": "Šroub víka 2",
+      "category": "Spojovací díly",
+      "description": "Referenční PW má šest šroubů víka. Zdejší polohy a délky jsou rekonstruované; počet na konkrétním SyncDrive není potvrzen.",
+      "verification": "počet doložen na PW; osazení rekonstruováno",
+      "source": "https://www.youtube.com/watch?v=Me-H_Gykobc&t=49s",
+      "kit": false,
+      "base_blender_mm": [
+        -22.21649254936259,
+        -65.57283664641756,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -60
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "case_bolt_03",
+      "name": "Šroub víka 3",
+      "category": "Spojovací díly",
+      "description": "Referenční PW má šest šroubů víka. Zdejší polohy a délky jsou rekonstruované; počet na konkrétním SyncDrive není potvrzen.",
+      "verification": "počet doložen na PW; osazení rekonstruováno",
+      "source": "https://www.youtube.com/watch?v=Me-H_Gykobc&t=49s",
+      "kit": false,
+      "base_blender_mm": [
+        56.84656388321621,
+        -56.81225321268832,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -60
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "case_bolt_04",
+      "name": "Šroub víka 4",
+      "category": "Spojovací díly",
+      "description": "Referenční PW má šest šroubů víka. Zdejší polohy a délky jsou rekonstruované; počet na konkrétním SyncDrive není potvrzen.",
+      "verification": "počet doložen na PW; osazení rekonstruováno",
+      "source": "https://www.youtube.com/watch?v=Me-H_Gykobc&t=49s",
+      "kit": false,
+      "base_blender_mm": [
+        75.35912528678062,
+        19.41143492073423,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -60
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "case_bolt_05",
+      "name": "Šroub víka 5",
+      "category": "Spojovací díly",
+      "description": "Referenční PW má šest šroubů víka. Zdejší polohy a délky jsou rekonstruované; počet na konkrétním SyncDrive není potvrzen.",
+      "verification": "počet doložen na PW; osazení rekonstruováno",
+      "source": "https://www.youtube.com/watch?v=Me-H_Gykobc&t=49s",
+      "kit": false,
+      "base_blender_mm": [
+        15.141856421307782,
+        65.57970575290925,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -60
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "case_bolt_06",
+      "name": "Šroub víka 6",
+      "category": "Spojovací díly",
+      "description": "Referenční PW má šest šroubů víka. Zdejší polohy a délky jsou rekonstruované; počet na konkrétním SyncDrive není potvrzen.",
+      "verification": "počet doložen na PW; osazení rekonstruováno",
+      "source": "https://www.youtube.com/watch?v=Me-H_Gykobc&t=49s",
+      "kit": false,
+      "base_blender_mm": [
+        -67.06150442599798,
+        52.15631817480376,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -60
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "PLY00423A",
+      "name": "Opěrné ložisko motorové hřídele PLY00423A",
+      "category": "Ložiska",
+      "description": "Katalogizované opěrné ložisko PW/PW-SE; zdejší rozměry a umístění nejsou měřené.",
+      "verification": "ověřené katalogové označení; poloha a rozměry rekonstruovány",
+      "source": "https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/",
+      "kit": false,
+      "base_blender_mm": [
+        48,
+        -6,
+        0
+      ],
+      "explode_blender_mm": [
+        17.55,
+        -3.6,
+        48
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "PLY00422",
+      "name": "Ložisko mezihřídele u skříně PLY00422",
+      "category": "Ložiska",
+      "description": "Katalogizované opěrné ložisko PW/PW-SE; zdejší rozměry a umístění nejsou měřené.",
+      "verification": "ověřené katalogové označení; poloha a rozměry rekonstruovány",
+      "source": "https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/",
+      "kit": false,
+      "base_blender_mm": [
+        28,
+        24,
+        0
+      ],
+      "explode_blender_mm": [
+        9.9,
+        10.8,
+        -40
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "PLY00424",
+      "name": "Spojkové ložisko mezihřídele PLY00424",
+      "category": "Volnoběžky",
+      "description": "Jednosměrná spojka nylonového převodu. Funkce je v modelu zastoupena jednou; rozměry a vnitřní geometrie jsou ilustrativní.",
+      "verification": "ověřené katalogové označení; poloha a rozměry rekonstruovány",
+      "source": "https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/",
+      "kit": false,
+      "base_blender_mm": [
+        28,
+        24,
+        0
+      ],
+      "explode_blender_mm": [
+        23,
+        38,
+        31
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "PLY00423B",
+      "name": "Opěrné ložisko mezihřídele PLY00423B",
+      "category": "Ložiska",
+      "description": "Součást uložení převodové sestavy; zdejší poloha a rozměry jsou rekonstruované.",
+      "verification": "ověřené katalogové označení; poloha rekonstruována",
+      "source": "https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/",
+      "kit": false,
+      "base_blender_mm": [
+        28,
+        24,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -50
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "drive_shim",
+      "name": "Vymezovací podložka převodu",
+      "category": "Převody",
+      "description": "Podložka pozorovaná na PW. Zdejší tloušťka a poloha jsou ilustrativní.",
+      "verification": "doloženo na PW; rozměry rekonstruovány",
+      "source": "https://www.youtube.com/watch?v=Me-H_Gykobc&t=173s",
+      "kit": false,
+      "base_blender_mm": [
+        28,
+        24,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -50
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "freewheel_bush",
+      "name": "Pouzdro volnoběžky",
+      "category": "Volnoběžky",
+      "description": "Samostatně snímané pouzdro před nylonovou převodovou sestavou na PW. Zdejší obrys a usazení jsou schematické.",
+      "verification": "doloženo na PW; tvar schematický",
+      "source": "https://www.youtube.com/watch?v=Me-H_Gykobc&t=193s",
+      "kit": false,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -50
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    },
+    {
+      "id": "inner_cover",
+      "name": "Vnitřní plastový kryt",
+      "category": "Skříň",
+      "description": "Zjednodušené znázornění krytu pozorovaného na PW. Přesný obrys, úchyty a průchody kabeláže nejsou změřené.",
+      "verification": "doloženo na PW; tvar schematický",
+      "source": "https://www.youtube.com/watch?v=Me-H_Gykobc&t=207s",
+      "kit": false,
+      "base_blender_mm": [
+        -30,
+        0,
+        0
+      ],
+      "explode_blender_mm": [
+        0,
+        0,
+        -50
+      ],
+      "geometry": "prostorově opravená studijní geometrie; nikoli změřený OEM díl"
+    }
+  ],
+  "model_revision": "clearance-layout-v1",
+  "variant": "Konkrétní SyncDrive Sport není identifikován; pořadí rozborky je reference Yamaha PW.",
+  "geometry_note": "Dutiny, otvory, rozdělení axiálních rovin a dráhy jsou prostorově zkontrolované v této studijní geometrii; rozměry mimo čtyři převody nejsou OEM specifikace.",
+  "clearance_layout": {
+    "axes": {
+      "crank": [
+        -30,
+        0
+      ],
+      "transfer": [
+        28,
+        24
+      ],
+      "motor": [
+        48,
+        -6
+      ]
+    },
+    "interior": [
+      [
+        -88,
+        7.102951435054649e-15
+      ],
+      [
+        -87.9301364599,
+        -2.845925110990228
+      ],
+      [
+        -87.72071414698742,
+        -5.684994139114514
+      ],
+      [
+        -87.37223757795729,
+        -8.510367518410971
+      ],
+      [
+        -86.88554626338737,
+        -11.315238676935445
+      ],
+      [
+        -86.26181268528356,
+        -14.092850434389302
+      ],
+      [
+        -85.50253947246811,
+        -16.836511280758803
+      ],
+      [
+        -84.60955578061521,
+        -19.539611496748762
+      ],
+      [
+        -83.58501288565463,
+        -22.195639077175198
+      ],
+      [
+        -82.43137900115971,
+        -24.798195418956343
+      ],
+      [
+        -81.15143333220459,
+        -27.34101073590786
+      ],
+      [
+        -79.74825938001578,
+        -29.81795916320685
+      ],
+      [
+        -78.22523751354764,
+        -32.22307351513691
+      ],
+      [
+        -76.58603682587741,
+        -34.55055966056113
+      ],
+      [
+        -74.83460629503875,
+        -36.794810481491425
+      ],
+      [
+        -72.97516527058764,
+        -38.95041938112707
+      ],
+      [
+        -71.01219330881977,
+        -41.012193308819754
+      ],
+      [
+        -68.95041938112709,
+        -42.97516527058762
+      ],
+      [
+        -66.79481048149147,
+        -44.834606295038725
+      ],
+      [
+        -64.55055966056112,
+        -46.586036825877414
+      ],
+      [
+        -62.223073515136925,
+        -48.225237513547626
+      ],
+      [
+        -59.817959163206865,
+        -49.748259380015774
+      ],
+      [
+        -57.34101073590788,
+        -51.15143333220459
+      ],
+      [
+        -54.79819541895638,
+        -52.4313790011597
+      ],
+      [
+        -52.195639077175244,
+        -53.58501288565462
+      ],
+      [
+        -49.539611496748755,
+        -54.60955578061521
+      ],
+      [
+        -46.83651128075882,
+        -55.502539472468115
+      ],
+      [
+        -44.09285043438932,
+        -56.26181268528355
+      ],
+      [
+        -41.315238676935465,
+        -56.88554626338736
+      ],
+      [
+        -38.510367518411016,
+        -57.37223757795729
+      ],
+      [
+        -11,
+        -61
+      ],
+      [
+        47,
+        -61
+      ],
+      [
+        72.11261875677381,
+        -22.111536757568462
+      ],
+      [
+        72.87412969000789,
+        -20.908979581603433
+      ],
+      [
+        73.5757166661023,
+        -19.67050536795394
+      ],
+      [
+        74.21568950057986,
+        -18.39909770947819
+      ],
+      [
+        74.79250644282732,
+        -17.097819538587622
+      ],
+      [
+        75.3047778903076,
+        -15.76980574837438
+      ],
+      [
+        75.75126973623406,
+        -14.418255640379412
+      ],
+      [
+        76.13090634264178,
+        -13.046425217194662
+      ],
+      [
+        76.44277313169368,
+        -11.657619338467732
+      ],
+      [
+        76.68611878897865,
+        -10.255183759205508
+      ],
+      [
+        76.8603570734937,
+        -8.842497069557254
+      ],
+      [
+        76.96506822994999,
+        -7.422962555495125
+      ],
+      [
+        77,
+        -6
+      ],
+      [
+        76.96506822994999,
+        -4.577037444504878
+      ],
+      [
+        76.8603570734937,
+        -3.1575029304427424
+      ],
+      [
+        76.68611878897865,
+        -1.744816240794509
+      ],
+      [
+        76.44277313169368,
+        -0.34238066153228086
+      ],
+      [
+        76.13090634264178,
+        1.0464252171946526
+      ],
+      [
+        75.75126973623406,
+        2.4182556403794084
+      ],
+      [
+        75.3047778903076,
+        3.769805748374381
+      ],
+      [
+        74.79250644282732,
+        5.097819538587604
+      ],
+      [
+        61.25966317040632,
+        37.77660356514323
+      ],
+      [
+        60.54361455244396,
+        39.391983363490155
+      ],
+      [
+        59.749165516540785,
+        40.97028252573591
+      ],
+      [
+        58.8782299600098,
+        42.507698790955985
+      ],
+      [
+        57.93290604289163,
+        44.000528388705675
+      ],
+      [
+        56.915471133303214,
+        45.4451749617276
+      ],
+      [
+        55.82837632105853,
+        46.838158229891235
+      ],
+      [
+        54.67424051277853,
+        48.176122374492664
+      ],
+      [
+        53.45584412271572,
+        49.45584412271571
+      ],
+      [
+        52.176122374492664,
+        50.674240512778525
+      ],
+      [
+        50.838158229891235,
+        51.82837632105853
+      ],
+      [
+        49.4451749617276,
+        52.915471133303214
+      ],
+      [
+        48.00052838870568,
+        53.93290604289163
+      ],
+      [
+        46.507698790955985,
+        54.8782299600098
+      ],
+      [
+        44.970282525735925,
+        55.74916551654078
+      ],
+      [
+        43.391983363490155,
+        56.54361455244396
+      ],
+      [
+        41.77660356514323,
+        57.25966317040632
+      ],
+      [
+        40.12803472211992,
+        57.89558634658875
+      ],
+      [
+        38.45024838116065,
+        58.44985208635952
+      ],
+      [
+        36.7472864765175,
+        58.92112511500358
+      ],
+      [
+        35.02325159258062,
+        59.308270094516296
+      ],
+      [
+        33.28229708039302,
+        59.61035435873212
+      ],
+      [
+        31.528617051864188,
+        59.82665016019909
+      ],
+      [
+        29.76643627578705,
+        59.95663642338621
+      ],
+      [
+        28.000000000000004,
+        60
+      ],
+      [
+        26.233563724212953,
+        59.95663642338621
+      ],
+      [
+        -32.845925110990244,
+        57.9301364599
+      ],
+      [
+        -35.684994139114515,
+        57.72071414698742
+      ],
+      [
+        -38.51036751841097,
+        57.3722375779573
+      ],
+      [
+        -41.31523867693544,
+        56.88554626338737
+      ],
+      [
+        -44.092850434389305,
+        56.26181268528355
+      ],
+      [
+        -46.836511280758806,
+        55.502539472468115
+      ],
+      [
+        -49.539611496748755,
+        54.60955578061521
+      ],
+      [
+        -52.1956390771752,
+        53.58501288565463
+      ],
+      [
+        -54.79819541895635,
+        52.43137900115972
+      ],
+      [
+        -57.341010735907865,
+        51.15143333220459
+      ],
+      [
+        -59.81795916320685,
+        49.74825938001578
+      ],
+      [
+        -62.22307351513691,
+        48.22523751354763
+      ],
+      [
+        -64.55055966056113,
+        46.58603682587741
+      ],
+      [
+        -66.79481048149142,
+        44.83460629503875
+      ],
+      [
+        -68.95041938112706,
+        42.975165270587624
+      ],
+      [
+        -71.01219330881975,
+        41.01219330881976
+      ],
+      [
+        -72.97516527058761,
+        38.95041938112708
+      ],
+      [
+        -74.83460629503875,
+        36.79481048149144
+      ],
+      [
+        -76.5860368258774,
+        34.55055966056114
+      ],
+      [
+        -78.22523751354763,
+        32.223073515136925
+      ],
+      [
+        -79.74825938001578,
+        29.81795916320686
+      ],
+      [
+        -81.15143333220459,
+        27.341010735907876
+      ],
+      [
+        -82.43137900115971,
+        24.798195418956357
+      ],
+      [
+        -83.58501288565463,
+        22.195639077175215
+      ],
+      [
+        -84.60955578061521,
+        19.53961149674878
+      ],
+      [
+        -85.50253947246811,
+        16.836511280758817
+      ],
+      [
+        -86.26181268528356,
+        14.092850434389316
+      ],
+      [
+        -86.88554626338737,
+        11.31523867693546
+      ],
+      [
+        -87.37223757795729,
+        8.510367518410984
+      ],
+      [
+        -87.72071414698742,
+        5.684994139114528
+      ],
+      [
+        -87.9301364599,
+        2.845925110990242
+      ]
+    ],
+    "exterior": [
+      [
+        -100.00361526449562,
+        7.102951435054649e-15
+      ],
+      [
+        -99.91929284411327,
+        -3.434914595540122
+      ],
+      [
+        -99.6665287230627,
+        -6.861554180956643
+      ],
+      [
+        -99.24593183225105,
+        -10.271663681350027
+      ],
+      [
+        -98.65851542642821,
+        -13.657027844243586
+      ],
+      [
+        -97.90569464316741,
+        -17.00949103084603
+      ],
+      [
+        -96.98928309367483,
+        -20.320976863699656
+      ],
+      [
+        -95.91148849364139,
+        -23.5835076833813
+      ],
+      [
+        -94.67490734466219,
+        -26.789223767382392
+      ],
+      [
+        -93.28251867903688,
+        -29.93040226486893
+      ],
+      [
+        -91.73767688301979,
+        -32.99947580170582
+      ],
+      [
+        -90.04410361580966,
+        -35.989050710923685
+      ],
+      [
+        -88.20587884374675,
+        -38.89192484471038
+      ],
+      [
+        -86.22743101131633,
+        -41.70110492501593
+      ],
+      [
+        -84.11352637263839,
+        -44.40982339097166
+      ],
+      [
+        -81.86925750914365,
+        -47.011554702537445
+      ],
+      [
+        -79.50003106109898,
+        -49.500031061098966
+      ],
+      [
+        -77.01155470253748,
+        -51.86925750914362
+      ],
+      [
+        -74.4098233909717,
+        -54.11352637263836
+      ],
+      [
+        -71.70110492501591,
+        -56.22743101131634
+      ],
+      [
+        -68.8919248447104,
+        -58.20587884374672
+      ],
+      [
+        -65.98905071092372,
+        -60.04410361580965
+      ],
+      [
+        -62.99947580170585,
+        -61.73767688301979
+      ],
+      [
+        -59.93040226486897,
+        -63.28251867903687
+      ],
+      [
+        -56.78922376738243,
+        -64.67490734466217
+      ],
+      [
+        -53.5835076833813,
+        -65.91148849364139
+      ],
+      [
+        -50.32097686369968,
+        -66.98928309367483
+      ],
+      [
+        -47.00949103084603,
+        -67.9056946431674
+      ],
+      [
+        -43.65702784424363,
+        -68.6585154264282
+      ],
+      [
+        -40.32131104254816,
+        -69.23731719788077
+      ],
+      [
+        -11.787803414664682,
+        -73
+      ],
+      [
+        53.53544655566371,
+        -73
+      ],
+      [
+        82.22234405887235,
+        -28.576542219754984
+      ],
+      [
+        83.16997392580176,
+        -27.08007112932029
+      ],
+      [
+        84.16196021691749,
+        -25.32897043375192
+      ],
+      [
+        85.06682917845701,
+        -23.531304555390804
+      ],
+      [
+        85.88240090183488,
+        -21.691404228794788
+      ],
+      [
+        86.60671060333378,
+        -19.813701935006925
+      ],
+      [
+        87.23801335744076,
+        -17.902721223320277
+      ],
+      [
+        87.77478830052563,
+        -15.963065813651358
+      ],
+      [
+        88.21574229473453,
+        -13.99940850577588
+      ],
+      [
+        88.5598130432724,
+        -12.01647992214453
+      ],
+      [
+        88.806171649569,
+        -10.019057111399345
+      ],
+      [
+        88.95422461416327,
+        -8.011952040045053
+      ],
+      [
+        89.00361526449562,
+        -6
+      ],
+      [
+        88.95422461416327,
+        -3.988047959954952
+      ],
+      [
+        88.806171649569,
+        -1.9809428886006428
+      ],
+      [
+        88.5598130432724,
+        0.01647992214452154
+      ],
+      [
+        88.21574229473453,
+        1.9994085057758615
+      ],
+      [
+        87.77478830052563,
+        3.9630658136513386
+      ],
+      [
+        87.23801335744078,
+        5.902721223320263
+      ],
+      [
+        86.60671060333377,
+        7.8137019350069465
+      ],
+      [
+        85.93559627549291,
+        9.553500408191667
+      ],
+      [
+        72.29006017648301,
+        42.50441235844431
+      ],
+      [
+        71.39475423032114,
+        44.52419020940273
+      ],
+      [
+        70.33540906735598,
+        46.62874759153388
+      ],
+      [
+        69.17407419580367,
+        48.67879033867283
+      ],
+      [
+        67.91354737309071,
+        50.669379718279174
+      ],
+      [
+        66.55686531874213,
+        52.59572022618241
+      ],
+      [
+        65.10729639865816,
+        54.45317113937146
+      ],
+      [
+        63.56833275133455,
+        56.23725769590304
+      ],
+      [
+        61.943681874994915,
+        57.94368187499493
+      ],
+      [
+        60.23725769590304,
+        59.56833275133454
+      ],
+      [
+        58.45317113937148,
+        61.10729639865816
+      ],
+      [
+        56.59572022618242,
+        62.55686531874212
+      ],
+      [
+        54.66937971827918,
+        63.913547373090715
+      ],
+      [
+        52.678790338672826,
+        65.17407419580368
+      ],
+      [
+        50.628747591533894,
+        66.33540906735597
+      ],
+      [
+        48.52419020940273,
+        67.39475423032114
+      ],
+      [
+        46.3701882553504,
+        68.34955762941388
+      ],
+      [
+        44.17193090875248,
+        69.19751905961492
+      ],
+      [
+        41.93471396410149,
+        69.93659570756623
+      ],
+      [
+        39.66392707297421,
+        70.56500707288743
+      ],
+      [
+        37.36504075988879,
+        71.08123925755713
+      ],
+      [
+        35.04359324333208,
+        71.48404861302586
+      ],
+      [
+        32.70517709370631,
+        71.77246473627437
+      ],
+      [
+        30.35542576033695,
+        71.94579280759949
+      ],
+      [
+        28.000000000000004,
+        72.00361526449562
+      ],
+      [
+        25.88062147848396,
+        71.95158744206515
+      ],
+      [
+        -33.49324945445363,
+        69.91498980640758
+      ],
+      [
+        -36.86155418095663,
+        69.66652872306271
+      ],
+      [
+        -40.271663681350034,
+        69.24593183225105
+      ],
+      [
+        -43.65702784424361,
+        68.65851542642821
+      ],
+      [
+        -47.00949103084602,
+        67.9056946431674
+      ],
+      [
+        -50.32097686369965,
+        66.98928309367483
+      ],
+      [
+        -53.583507683381306,
+        65.91148849364137
+      ],
+      [
+        -56.789223767382374,
+        64.67490734466219
+      ],
+      [
+        -59.930402264868924,
+        63.2825186790369
+      ],
+      [
+        -62.99947580170584,
+        61.73767688301978
+      ],
+      [
+        -65.98905071092369,
+        60.04410361580966
+      ],
+      [
+        -68.89192484471039,
+        58.20587884374673
+      ],
+      [
+        -71.70110492501593,
+        56.22743101131633
+      ],
+      [
+        -74.40982339097168,
+        54.113526372638376
+      ],
+      [
+        -77.01155470253747,
+        51.86925750914362
+      ],
+      [
+        -79.50003106109895,
+        49.50003106109897
+      ],
+      [
+        -81.8692575091436,
+        47.011554702537495
+      ],
+      [
+        -84.11352637263838,
+        44.409823390971695
+      ],
+      [
+        -86.22743101131633,
+        41.701104925015926
+      ],
+      [
+        -88.20587884374672,
+        38.89192484471042
+      ],
+      [
+        -90.04410361580966,
+        35.98905071092371
+      ],
+      [
+        -91.73767688301979,
+        32.99947580170584
+      ],
+      [
+        -93.28251867903688,
+        29.93040226486895
+      ],
+      [
+        -94.67490734466219,
+        26.789223767382413
+      ],
+      [
+        -95.91148849364139,
+        23.583507683381317
+      ],
+      [
+        -96.98928309367483,
+        20.320976863699666
+      ],
+      [
+        -97.90569464316741,
+        17.009491030846043
+      ],
+      [
+        -98.65851542642821,
+        13.6570278442436
+      ],
+      [
+        -99.24593183225105,
+        10.27166368135004
+      ],
+      [
+        -99.6665287230627,
+        6.861554180956658
+      ],
+      [
+        -99.91929284411327,
+        3.4349145955401363
+      ]
+    ],
+    "boltCenters": [
+      [
+        -89.63866095902213,
+        -23.173674073870984
+      ],
+      [
+        -22.21649254936259,
+        -65.57283664641756
+      ],
+      [
+        56.84656388321621,
+        -56.81225321268832
+      ],
+      [
+        75.35912528678062,
+        19.41143492073423
+      ],
+      [
+        15.141856421307782,
+        65.57970575290925
+      ],
+      [
+        -67.06150442599798,
+        52.15631817480376
+      ]
+    ],
+    "units": "mm"
+  }
+}

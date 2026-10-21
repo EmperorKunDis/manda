@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SyncDrive Sport | Interaktivní rozborka</title>
+  <meta name="description" content="Interaktivní 3D studie motoru Giant SyncDrive Sport. Rozložte sestavu, prohlédněte součásti a odlište doložené údaje od rekonstruované geometrie.">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="left-panel">
+      <div class="brand"><span class="brand-icon">S<span class="brand-dot">•</span></span><span>MECHANIKA<br><b>POHONU</b></span></div>
+      <p class="eyebrow">INTERAKTIVNÍ STUDIE / 01</p>
+      <h1>Giant<br>SyncDrive <em>Sport</em></h1>
+      <p class="intro">Rozborka k sadě klikových ložisek PLY00700. Servisní pořadí podle rozboru Yamaha PW.</p>
+      <div class="status-card"><span class="pulse"></span><div><strong>Varianta motoru nepotvrzena</strong><small>PLY00700 označuje sadu, nikoli motor. Geometrie PW/PW-SE je studijní; pořadí je doloženo na PW.</small></div></div>
+      <div class="mode-tabs" aria-label="Režim prohlížení"><button id="mode-guide" aria-pressed="true">Krok za krokem</button><button id="mode-free" aria-pressed="false">Volné prohlížení</button></div>
+      <section id="guide-panel" aria-label="Průvodce rozborkou">
+        <div class="guide-heading"><span>ROZBORKA / PLY00700</span><output id="step-count">0 / 15</output></div>
+        <progress id="step-progress" max="15" value="0" aria-label="Postup rozborky"></progress>
+        <h2 id="step-title">Motor na pracovním stole</h2>
+        <p id="step-text"></p>
+        <p id="step-tool" class="step-tool"></p>
+        <p id="step-note" class="step-note"></p>
+        <a id="step-source" class="detail-source" target="_blank" rel="noreferrer">Referenční video PW ↗</a>
+        <details class="guide-outline"><summary>Pořadí všech kroků</summary><ol id="step-list"></ol></details>
+        <details class="accuracy-notes"><summary>Přesnost této rekonstrukce</summary><p>Skříň má dutinu, díly průchozí otvory a převody oddělené roviny. Po vytažení z uložení se podsestavy odkládají stranou; O-kroužky se schematicky roztahují.</p><p>Průniky jsou kontrolovány pro tuto studijní geometrii a její dráhy. Skříň, středy hřídelí, zubové profily, rozměry ložisek a kabeláž nejsou výrobně přesné. Značka tekutého těsnění není vyjímatelný díl.</p><a href="https://www.ebikemotorcentre.com/product/yamaha-pw-pw-se-crankshaft-bearing-kit-part-no-ply00700/" target="_blank" rel="noreferrer">Katalog sady PLY00700 ↗</a></details>
+      </section>
+      <div id="free-controls" hidden>
+      <div class="control-title"><span>01</span> ROZLOŽENÍ</div>
+      <div class="range-row"><label for="explode">Průběh rozborky</label><output id="explode-value">0 %</output></div>
+      <input id="explode" type="range" min="0" max="100" value="0" step="1" aria-label="Míra rozložení sestavy">
+      <div class="range-endpoints"><span>Sestaveno</span><span>Rozloženo</span></div>
+      <p class="free-note">Posuvník plynule prochází ověřenými drahami průvodce. Ruční vyjmutí odloží vybraný díl samostatně vedle sestavy.</p>
+      </div>
+      <div class="control-title"><span>02</span> ZOBRAZENÍ</div>
+      <button id="kit" class="toggle-button" aria-pressed="false"><span class="switch"></span><span><b>Sada PLY00700</b><small>Zvýraznit kliková ložiska a O-kroužky</small></span></button>
+      <button id="housing" class="toggle-button" aria-pressed="false"><span class="switch"></span><span><b>Průhledná skříň</b><small>Odhalit vnitřní uspořádání</small></span></button>
+      <button id="assemble" class="primary-action">Sestavit vše <span>↺</span></button>
+      <button id="camera-reset" class="text-action">Vrátit výchozí pohled <span>⌖</span></button>
+      <p class="source-note">Podklady: <a href="https://avdweb.nl/solar-bike/hub-motor/yamaha-pw-se" target="_blank" rel="noreferrer">rozbor PW-SE ↗</a> · <a href="https://www.ebikemotorcentre.com/yamaha-motor-parts/yamaha-pw-and-pw-se/" target="_blank" rel="noreferrer">servisní katalog ↗</a></p>
+    </aside>
+    <main class="stage" id="stage">
+      <div class="stage-top"><span class="stage-kicker">3D ROZBORKA</span><span class="stage-line"></span><span id="load-state" role="status">NAČÍTÁM MODEL</span></div>
+      <div id="canvas-wrap" aria-label="Interaktivní model motoru"></div>
+      <div id="stage-message" class="stage-message" role="status"><span class="loading-ring" aria-hidden="true"></span><strong id="stage-message-title">Připravujeme model motoru</strong><p id="stage-message-text">Načítání 3D sestavy a seznamu součástí…</p><button id="retry" hidden>Zkusit znovu</button></div>
+      <div class="stage-tools" aria-label="Rychlé pohledy"><button id="view-assembled">Na začátek</button><button id="view-exploded">Volný rozstřel</button><button id="fit-all" title="Zobrazit všechny viditelné díly">Celá sestava ⤢</button></div>
+      <div id="guide-nav" class="guide-nav" aria-label="Ovládání rozborky"><div class="guide-current" role="status" aria-live="polite"><span id="stage-step-count">PŘÍPRAVA</span><strong id="stage-step-title">Motor na pracovním stole</strong></div><div class="guide-nav-buttons"><button id="step-prev" disabled>← Zpět</button><button id="step-replay" disabled title="Zopakovat pohyb aktuálního kroku">↻</button><button id="step-next">Další krok →</button></div></div>
+      <div class="stage-hint">Táhněte pro otočení <i>·</i> kolečkem přibližte <i>·</i> kliknutím vyberte díl</div>
+      <div class="stage-corner">PW / PW-SE<br><strong>SYNC<span>DRIVE</span></strong></div>
+    </main>
+    <aside class="right-panel">
+      <div class="panel-top"><span class="eyebrow">03 / INSPEKTOR DÍLŮ</span><span id="part-count">—</span></div>
+      <div class="selected" id="selected">
+        <span class="selected-label">VYBRANÝ DÍL</span>
+        <h2 id="selected-name">Vyberte díl</h2>
+        <code id="selected-id"></code>
+        <span id="selected-status" class="fact-pill">Průzkum sestavy</span>
+        <p id="selected-description">Klepněte na součást modelu nebo na položku v seznamu. Díl pak můžete skrýt, vrátit či zaměřit kamerou.</p>
+        <div class="selected-actions"><button id="remove-part" disabled>Vyjmout</button><button id="restore-part" disabled>Vrátit</button><button id="hide-part" disabled>Skrýt</button><button id="focus-part" disabled>Zaměřit</button></div>
+        <p id="inspection-note" class="inspection-note">V průvodci díly odebírají tlačítka Zpět a Další krok. Ruční vyjmutí je ve volném režimu.</p>
+        <a id="selected-source" class="detail-source" target="_blank" rel="noreferrer" hidden>Otevřít zdroj ↗</a>
+      </div>
+      <div class="list-title"><span>SEZNAM SOUČÁSTÍ</span><span id="visible-count"></span></div>
+      <label class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Hledat díl nebo číslo…" autocomplete="off" aria-label="Hledat díl"></label>
+      <div class="filter-row"><button class="filter active" data-filter="all">Vše</button><button class="filter" data-filter="kit">PLY00700</button><button class="filter" data-filter="hidden">Skryté</button></div>
+      <div id="part-list" class="part-list" aria-label="Seznam součástí"></div>
+      <div class="disclaimer">Pořadí: servisní rozborka Yamaha PW od eBike Motor Centre. Použití na konkrétním SyncDrive Sport nepotvrzeno. Tvar skříně, vůle, směry odložení a část detailů jsou schematické. Kabeláž není detailně modelována.</div>
+    </aside>
+  </div>
+  <noscript><p class="noscript-message">Pro zobrazení interaktivního motoru zapněte JavaScript v prohlížeči.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "model": "web/export/syncdrive_sport.glb",
+  "model_sha256": "9287054def1d5d7572fa230eb3e73684836c8808c25c0699f6d68bfaa5240b5f",
+  "motion_sha256": "040b630e64544556ed5a4a7f80b839fcbb5633c37ee6e50e3b7c086cf74947a2",
+  "states": 1231,
+  "swept_intervals": 270,
+  "pair_tolerance_mm": 0.015,
+  "method": "Positive volume intersection of polygon-with-holes extrusion regions, plus conservative swept envelopes at motion phase boundaries; torus represented by conservative axial slices. All separate component pairs; same-component solids excluded.",
+  "collisions": []
+}
