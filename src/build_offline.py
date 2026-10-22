@@ -2,6 +2,7 @@
 """Bundle the viewer and its local assets into a double-clickable HTML file."""
 import base64
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,9 +31,12 @@ def build():
         "'./disassembly.js'", "'motor-disassembly'").replace(
         "'./export/parts_metadata.json'", json.dumps(data_url(WEB / 'export/parts_metadata.json', 'application/json'))).replace(
         "'./export/syncdrive_sport.glb'", json.dumps(data_url(WEB / 'export/syncdrive_sport.glb', 'model/gltf-binary')))
+    logo_data_url = data_url(WEB / 'assets/praut.svg', 'image/svg+xml')
     html = (WEB / 'index.html').read_text().replace(
         '<html lang="cs">', '<html lang="cs">\n<!--\nThree.js r180\n' + (WEB / 'vendor/LICENSE-three.txt').read_text() + '\n-->').replace(
-        '<link rel="stylesheet" href="./style.css?v=praut-1">', '<style>' + (WEB / 'style.css').read_text() + '</style>').replace(
+        'src="./assets/praut.svg"', 'src="' + logo_data_url + '"')
+    html = re.sub(r'<link rel="stylesheet" href="\./style\.css\?v=[^"]+">', '<style>' + (WEB / 'style.css').read_text() + '</style>', html)
+    html = html.replace(
         '<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>',
         '<script type="importmap">' + json.dumps({'imports': modules}) + '</script>').replace(
         '<script type="module" src="./app.js"></script>',
