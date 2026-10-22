@@ -32,7 +32,7 @@ def build():
         "'./export/syncdrive_sport.glb'", json.dumps(data_url(WEB / 'export/syncdrive_sport.glb', 'model/gltf-binary')))
     html = (WEB / 'index.html').read_text().replace(
         '<html lang="cs">', '<html lang="cs">\n<!--\nThree.js r180\n' + (WEB / 'vendor/LICENSE-three.txt').read_text() + '\n-->').replace(
-        '<link rel="stylesheet" href="./style.css">', '<style>' + (WEB / 'style.css').read_text() + '</style>').replace(
+        '<link rel="stylesheet" href="./style.css?v=praut-1">', '<style>' + (WEB / 'style.css').read_text() + '</style>').replace(
         '<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>',
         '<script type="importmap">' + json.dumps({'imports': modules}) + '</script>').replace(
         '<script type="module" src="./app.js"></script>',
